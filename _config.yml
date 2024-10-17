@@ -221,7 +221,7 @@ announcements:
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
@@ -246,6 +246,7 @@ include:
   - _pages/404.md
   - _pages/about.md
   - _pages/cv.md
+  - _pages/news.md
   - _pages/publications.md
 exclude:
   - bin/
@@ -267,15 +268,17 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - assets/blog/
+  - assets/html/
+  - assets/pdf/
+  - assets/plotly/
   - _pages/about_einstein.md
   - _pages/blog.md
   - _pages/dropdown.md
-  - _pages/news.md
   - _pages/profiles.md
   - _pages/projects.md
   - _pages/repositories.md
   - _pages/teaching.md
-  - assets/blog/
   - _projects/
   - _posts/
 keep_files:
@@ -344,7 +347,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Savich]
-  first_name: [Melisa, Melisa K, Melisa Kristi, M, MK]
+  first_name: [Melisa, M., Melisa K., MK, Melisa Kristi]
 
   style: apa
   locale: en
@@ -370,10 +373,10 @@ scholar:
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  altmetric: false # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
+  dimensions: false # Dimensions badge (Customization options: https://badge.dimensions.ai/)
+  google_scholar: false # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  inspirehep: false # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -441,7 +444,7 @@ imagemagick:
     - ".tiff"
     - ".gif"
   output_formats:
-    webp: "-quality 85"
+    webp: "-quality 100"
 
 # Lazy loading images
 #   If you enable lazy loading, all images will add the loading="lazy" attribute.
@@ -663,7 +666,7 @@ third_party_libraries:
 
 jekyll_get_json:
   - data: resume
-    json: assets/json/resume.json # it can also be an url
+    json: https://registry.jsonresume.org/m3lixir.json # it can also be an url
 jsonresume:
   - basics
   - work
