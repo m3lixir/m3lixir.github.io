@@ -244,6 +244,7 @@ kramdown:
 # Includes & excludes
 include:
   - assets/pdf/
+  - assets/img/
   - _pages/404.md
   - _pages/about.md
   - _pages/cv.md
