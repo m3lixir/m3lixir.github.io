@@ -6,7 +6,7 @@ subtitle: "Security Research Engineer | #OpenToWork"
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>(248) 943-2251</p>
