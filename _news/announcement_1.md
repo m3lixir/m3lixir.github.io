@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Welcome to my site! Excuse the construction as I continue building and refining things.
+Welcome to my digital corner! This is where I’ll be sharing the latest projects I’ve been hacking on and exploring.
