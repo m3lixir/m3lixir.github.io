@@ -105,7 +105,7 @@ lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 linkedin_username: melisasavich # your LinkedIn user name
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: # your Medium username
-orcid_id: 0009-0007-7988-4900 # your ORCID ID
+orcid_id: #0009-0007-7988-4900 # your ORCID ID
 osf_id: # your OSF ID
 pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
@@ -243,6 +243,7 @@ kramdown:
 
 # Includes & excludes
 include:
+  - assets/pdf/
   - _pages/404.md
   - _pages/about.md
   - _pages/cv.md
@@ -270,9 +271,7 @@ exclude:
   - vendor
   - assets/blog/
   - assets/html/
-  - assets/pdf/
   - assets/plotly/
-  - _pages/about_einstein.md
   - _pages/blog.md
   - _pages/dropdown.md
   - _pages/profiles.md
@@ -309,7 +308,7 @@ defaults:
   - scope:
       path: "assets/**"
     values:
-      sitemap: true
+      sitemap: false
 
 sass:
   style: compressed
