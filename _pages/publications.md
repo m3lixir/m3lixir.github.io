@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: My contributions to open source and academia.
+description: my contributions to open source and academia
 nav: true
 nav_order: 3
 ---
