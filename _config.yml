@@ -242,13 +242,13 @@ kramdown:
 
 # Includes & excludes
 include:
-  - assets/pdf/
-  - assets/img/
+  - assets/
   - _pages/404.md
   - _pages/about.md
   - _pages/cv.md
   - _pages/news.md
   - _pages/publications.md
+  - _posts/
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -269,9 +269,6 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - assets/blog/
-  - assets/html/
-  - assets/plotly/
   - _pages/blog.md
   - _pages/dropdown.md
   - _pages/profiles.md
@@ -279,7 +276,6 @@ exclude:
   - _pages/repositories.md
   - _pages/teaching.md
   - _projects/
-  - _posts/
 keep_files:
   - CNAME
   - .nojekyll
