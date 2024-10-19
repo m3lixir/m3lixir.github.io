@@ -8,7 +8,7 @@ middle_name: K.
 last_name: Savich
 email: contact@melisasavich.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Melisa K. Savich is a cybersecurity research engineer specializing in fuzzing,
+  Melisa K. Savich is a security research engineer specializing in fuzzing,
   CI/CD pipelines, and system-level security. Explore her portfolio of innovative
   technical projects, research, and contributions to open-source cybersecurity.
 footer_text:
@@ -56,7 +56,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: false
+rss_icon: true
 
 # -----------------------------------------------------------------------------
 # Layout
