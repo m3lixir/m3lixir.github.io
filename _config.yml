@@ -13,21 +13,21 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   technical projects, research, and contributions to open-source cybersecurity.
 footer_text:
 keywords: >
-  Melisa K. Savich
-  Cybersecurity Engineer
-  Cybersecurity Research
-  Fuzzing Techniques
-  CI/CD Pipelines
-  Sandia National Labs
-  Embedded Systems Security
-  Application Security
-  Taint Analysis
-  Security Research
-  Binary Analysis
-  Open Source Projects
-  Technology Consulting
-  Digital Security
-  Tech Innovation
+  Melisa K. Savich,
+  Cybersecurity Engineer,
+  Cybersecurity Research,
+  Fuzzing Techniques,
+  CI/CD Pipelines,
+  Sandia National Labs,
+  Embedded Systems Security,
+  Application Security,
+  Taint Analysis,
+  Security Research,
+  Binary Analysis,
+  Open Source Projects,
+  Technology Consulting,
+  Digital Security,
+  Tech Innovation,
   AI in Cybersecurity # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
