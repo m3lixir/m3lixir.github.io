@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "Security Research Engineer | <a href='https://www.linkedin.com/feed/hashtag/?keywords=opentowork'>#OpenToWork</a>"
+subtitle: "get to know me and learn about my journey"
 
 profile:
   align: right

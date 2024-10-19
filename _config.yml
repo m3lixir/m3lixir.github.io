@@ -148,7 +148,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: bits & bytes # blog_name will be displayed in your blog page
-blog_description: from bits of knowledge to bytes of understanding—tech uncovered
+blog_description: from bits of knowledge to bytes of understanding
 permalink: /blog/:year/:title/
 lsi: true # produce an index for related posts
 
@@ -210,7 +210,7 @@ collections:
     output: true
     permalink: /:collection/:title/
   projects:
-    output: false
+    output: true
     permalink: /:collection/:title/
 
 announcements:
