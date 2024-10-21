@@ -122,7 +122,7 @@
         {%- if site.email -%}
           {
             id: 'socials-email',
-            title: 'Send email',
+            title: 'Email',
             section: 'Socials',
             handler: () => {
               window.open("mailto:{{ site.email | encode_email }}", "_blank");
