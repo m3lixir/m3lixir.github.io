@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: "get to know me and learn about my journey"
-og_image: favicon.svg
+og_image: /assets/img/favicon.svg
 
 profile:
   align: right
