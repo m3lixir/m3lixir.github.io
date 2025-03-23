@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/m3lixir
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://melisasavich.com
+  * I am m3lixir (https://keybase.io/m3lixir) on keybase.
+  * I have a public key ASDIkDH9Q1ucJk-kY0xGHfCv6HzD8fFKTZgl2PiFN8tJwwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c89031fd435b9c264fa4634c461df0afe87cc3f1f14a4d9825d8f88537cb49c30a",
+      "host": "keybase.io",
+      "kid": "0120c89031fd435b9c264fa4634c461df0afe87cc3f1f14a4d9825d8f88537cb49c30a",
+      "uid": "8a00d75e17cfe24087fae1fc4c803c19",
+      "username": "m3lixir"
+    },
+    "merkle_root": {
+      "ctime": 1742725912,
+      "hash": "1c39f914f3c2d63765a56d1ce323671fd02cd62ad8a5b6c26366aff8ee514ba96105a5082af11431dd1880ee882d3b4f0ae5055a79953641242d7d32a401281b",
+      "hash_meta": "2901be4094a386b27ce32a5ba52e5d5342d0487b213c796039b02c3cec7d9698",
+      "seqno": 26652404
+    },
+    "service": {
+      "entropy": "QPgJtBFZee04U+V4HmtgHbnH",
+      "hostname": "melisasavich.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.4.2"
+  },
+  "ctime": 1742725957,
+  "expire_in": 504576000,
+  "prev": "1d2cf9af9763d847e4df118c5424485cc1170373ae0a5c62bd58fad3b8e9b41e",
+  "seqno": 19,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgyJAx/UNbnCZPpGNMRh3wr+h8w/HxSk2YJdj4hTfLScMKp3BheWxvYWTESpcCE8QgHSz5r5dj2Efk3xGMVCRIXMEXA3OuClxivVj607jptB7EIHSquRNhiO5ZUlO8LqQXlxXALXlMmDkMtRkkOUrI+ezqAgHCo3NpZ8RAAJfpPJsCXs9So4r6teFyUnO9JElTjc1ElPOp4Wkm7u3DhtRzE7uxwqG2nsuhPys5k5Jvp2FlybuXJx08w8fDDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFUZ76uNOQYx68qV9TpINrrCphNAHaEFk6G6AB64KEsGo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/m3lixir
+
+==================================================================
