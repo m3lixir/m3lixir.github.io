@@ -1,15 +1,19 @@
 "IETF":
   url: https://www.ietf.org
-  color: "#00369f"
+  color: "#FFD652"
 
 "NYU":
-  url: https://journals.aps.org/
+  url: https://www.nyu.edu
+  color: "#8900e1"
 
 "RSAC":
-  color: "#009f36"
+  url: https://www.rsaconference.com
+  color: "#CCFF66"
 
-"IEEE":
-  color: "#009f36"
+"IEEE VNC":
+  url: https://ieee-vnc.org
+  color: "#0DB6EF"
 
 "SNL":
-  color: "#009f36"
+  url: https://www.sandia.gov
+  color: "#00ADD0"
