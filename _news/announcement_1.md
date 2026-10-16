@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Hello World!
+Hello World! :earth_africa:
