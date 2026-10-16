@@ -2,18 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Cybersecurity Strategist · Technologist · Security Researcher
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  more_info:
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -27,8 +24,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<i>Curious by nature. Skeptical by default.</i>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm Mel, a cybersecurity strategist and technologist focused on understanding how systems work, where they fail, and what happens when they're pushed beyond their intended boundaries.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My professional interests span cybersecurity, threat modeling, secure architecture, privacy, threat intelligence, and emerging technologies. I'm particularly interested in identifying overlooked vulnerabilities, examining unconventional attack surfaces, and understanding the relationship between technology, human behavior, and security.
+
+I approach cybersecurity with the belief that effective security requires more than implementing controls or following established frameworks. It demands an understanding of how systems behave in practice, how people interact with them, and how assumptions can introduce vulnerabilities that aren't immediately apparent.
+
+My interests extend into OSINT, network analysis, artificial intelligence, automation, and the development of tools that make complex technologies more accessible and understandable. I enjoy exploring unfamiliar systems, challenging conventional approaches, and translating technical complexity into practical insights.
+
+Beyond security research and strategy, I have a strong interest in digital design, creative technology, and independent development. I see creativity and technical rigor as complementary disciplines, particularly when solving problems that don't have obvious answers.
+
+I value independent thinking, intellectual curiosity, privacy, and the ability to question established assumptions. Much of my work is driven by a desire to understand not just how technology is supposed to function, but how it actually behaves.
+
+This website serves as a home for my professional work, technical projects, research, writing, and ongoing experiments. It's a place to document what I'm building, share what I'm learning, and explore ideas that deserve a closer look.
+
+<b>Good questions. Strange places.</b>
