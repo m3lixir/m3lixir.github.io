@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://m3lixir.github.io/al-folio/sitemap.xml
+Sitemap: https://m3lixir.github.io/sitemap.xml
