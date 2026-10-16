@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Selected research, papers, and technical explorations documenting my work across security, systems, and technology.
+description: selected research, papers, and technical explorations documenting my work across security, systems, and technology.
 nav: true
 nav_order: 2
 ---
