@@ -4,7 +4,7 @@ title: Michigan Is Rolling Out the Welcome Mat for Data Centers. Let's Negotiate
 date: 2026-06-13 17:08:00
 description: The piece argues that Michigan should actively compete for major AI and data center investments while ensuring host communities negotiate from a position of confidence and share in the long-term benefits of that growth. Rather than framing the discussion as a choice between development and opposition, the commentary explores how Michigan can participate in the emerging AI economy on terms that strengthen local infrastructure, resilience, and economic opportunity.
 tags: commentary
-categories: oped
+categories: op-ed
 ---
 
 > *Originally written for and submitted to Bridge Michigan, this op-ed ultimately went unpublished. I'm sharing it here as part of my independent writing.*
