@@ -1,0 +1,48 @@
+/* Styling for addresses rendered by al_email_protect.
+   Plain CSS with al-folio's CSS custom properties rather than Sass: _sass/ is
+   gem-owned by al_folio_core and a plugin must not add to the theme's build. */
+
+.al-email-protect {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.al-email-protect:hover .al-email-text {
+  text-decoration: underline;
+}
+
+.al-email-text {
+  color: var(--global-theme-color, inherit);
+}
+
+.al-email-sep {
+  color: var(--global-text-color, inherit);
+  /* The " [at] " / " [dot] " markers are a rendering of the address, not extra
+     words to read out; the surrounding link already carries the full value. */
+  user-select: none;
+}
+
+#al-email-copied-toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: var(--global-theme-color, rgba(0, 0, 0, 0.85));
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  z-index: 9999;
+  transition: transform 0.25s ease;
+  pointer-events: none;
+}
+
+#al-email-copied-toast.is-visible {
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #al-email-copied-toast {
+    transition: none;
+  }
+}
