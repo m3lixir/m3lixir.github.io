@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Research, tools, and experiments exploring how systems work and what happens when their assumptions fail.
 nav: true
 nav_order: 2
 display_categories: [work, fun]
