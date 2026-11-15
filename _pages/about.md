@@ -2,13 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: Cybersecurity Strategist · Technologist · Security Researcher
+subtitle: <b>Cybersecurity Strategist</b> · <b>Technologist</b> · <b>Security Researcher</b>
 
 profile:
   align: right
   image: profile_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: _Working outside the expected parameters._
+  more_info: <i>Working outside the expected parameters.</i>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
