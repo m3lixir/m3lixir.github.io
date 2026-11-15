@@ -15,6 +15,8 @@ Not everyone is sure what to make of the new arrival.
 
 The proposed [Stargate campus in Saline Township](https://www.latitudemedia.com/news/what-the-michigan-stargate-site-says-about-todays-ai-market/) and Google's [Project Cannoli in Van Buren Township](https://www.panattoni.com/vanburen/) represent billions of dollars in investment and signal Michigan's ambition to compete in the rapidly growing artificial intelligence economy.
 
+The scale is substantial. In its [October 30, 2025 reporting](https://michiganadvance.com/2025/10/30/whitmer-multi-billion-dollar-saline-township-data-center-largest-investment-in-michigan-history/), Michigan Advance described Gov. Gretchen Whitmer's announcement of the Saline Township project as the largest investment in Michigan history. The announced employment figures included 2,500 union construction jobs, 450 permanent jobs on site, and 1,500 additional jobs in the community. Those are projections, but they help explain why Michigan wants a place in this industry.
+
 Supporters make a compelling case. In a recent [Bridge Michigan guest commentary](https://bridgemi.com/guest-commentary/opinion-building-ai-infrastructure-the-michigan-way/), OpenAI Chief Global Affairs Officer Chris Lehane argued that building AI infrastructure presents a significant economic opportunity for the state.
 
 Yet many residents are asking a different question:
@@ -24,6 +26,8 @@ Yet many residents are asking a different question:
 Across town halls, community meetings, and online discussions, concerns tend to sound remarkably similar. Residents see large developments consuming farmland, reshaping local landscapes, increasing demand on infrastructure, and placing new pressure on the electrical grid. Meanwhile, the promised benefits often arrive in the form of statistics about investment, tax revenue, and future economic growth.
 
 Those benefits may be real. But they can also feel distant compared to the changes occurring directly outside someone's front door.
+
+The local concerns are not abstract either. [Michigan Advance reported](https://michiganadvance.com/2025/10/30/whitmer-multi-billion-dollar-saline-township-data-center-largest-investment-in-michigan-history/) that the project moved forward after a legal settlement following the township board's rejection of rezoning, amid opposition over traffic, noise, water, and energy. Welcoming investment does not make those questions disappear.
 
 The answer is not to reject these projects.
 
@@ -67,15 +71,25 @@ The most successful negotiations are not zero-sum. They create durable value for
 
 In fact, communities across the country have already used [Community Benefit Agreements](https://climate.law.columbia.edu/content/community-benefits-agreements-database) to align major infrastructure and development projects with local priorities. These agreements demonstrate that economic development and community interests do not have to be competing objectives.
 
+Saline Township offers a concrete example. [Related Digital's project page](https://www.related-digital.com/michigan) lists commitments of $8 million for area fire departments, $2 million for a community investment fund, and $4 million for a farmland preservation trust. It also projects at least $1.6 million in annual tax revenue through 2039 and $8 million for area schools.
+
+Those commitments give the conversation a starting point. Communities should be able to understand when benefits arrive, who oversees them, and how promises become lasting results.
+
 ## Thinking Bigger Than Tax Revenue
 
 Public reporting suggests that projects such as Stargate and Project Cannoli could eventually require power measured in gigawatts. A recent [WKAR analysis](https://www.wkar.org/michigans-data-center-divide/2026-02-27/michigan-data-centers-could-require-power-equal-to-six-nuclear-plants) noted that the proposed developments could require electricity comparable to multiple large power plants. Likewise, the [International Energy Agency](https://www.iea.org/reports/energy-and-ai) has identified AI and data centers as a rapidly growing source of global electricity demand.
+
+For Saline Township specifically, [Michigan Advance reported DTE's planned electrical load at 1.4 gigawatts](https://michiganadvance.com/2025/10/30/whitmer-multi-billion-dollar-saline-township-data-center-largest-investment-in-michigan-history/). That makes the terms of power service a central community concern.
+
+[Related Digital says](https://www.related-digital.com/michigan) the project will finance new battery storage and that supplying its power will not affect existing DTE customers' energy supply or rates. The developer also says closed-loop cooling will keep daily water use comparable to an office building. These are developer assurances that communities should be able to measure against actual performance.
 
 Facilities operating at that scale are not simply commercial developments.
 
 They become part of Michigan's long-term infrastructure landscape.
 
 That creates an opportunity to think beyond traditional economic development incentives.
+
+Saline's proposed battery investment makes that conversation especially relevant. Financing storage for a data center does not, by itself, establish what resilience benefits nearby residents will receive.
 
 What if a project included community-scale battery storage that strengthened local grid resilience?
 
