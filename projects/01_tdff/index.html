@@ -1,0 +1,203 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> TDFF | Melisa K. Savich </title> <meta name="author" content="Melisa K. Savich"> <meta name="description" content="Taint-guided input mutation for embedded firmware research."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%91%BE&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://m3lixir.github.io/projects/01_tdff/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> <link rel="stylesheet" href="/assets/al_email_protect/css/email-protect.css"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Melisa</span> K. Savich </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">TDFF</h1> <p class="post-description">Taint-guided input mutation for embedded firmware research.</p> </header> <article> <p>Embedded firmware depends on hardware interactions that make conventional software testing difficult. TDFF explores whether dynamic taint analysis can help choose more useful inputs when each execution is expensive.</p> <h2 id="approach">Approach</h2> <p>The prototype follows a record, replay, and explore loop. Avatar2 coordinates execution with the embedded target; PANDA replays recorded execution for analysis. Tainted branch information identifies input bytes that influence conditional branches, guiding deterministic mutations rather than changing every byte indiscriminately.</p> <p>The custom <code class="language-plaintext highlighter-rouge">io_taint</code> PANDA plugin is part of this project. It labels reads in a configured memory-mapped I/O range and logs executed basic blocks. The Python driver uses the resulting logs to guide input mutation and track newly observed blocks.</p> <h2 id="implementation">Implementation</h2> <ul> <li>Hardware-assisted recording and PANDA replay for embedded firmware analysis.</li> <li>Input mutations using bit flips, small arithmetic changes, and selected byte values.</li> <li>Device-specific configuration and recording scripts.</li> <li>Examples targeting Nucleo boards, including a firmware port of Libtasn1.</li> </ul> <h2 id="findings-and-limits">Findings and limits</h2> <p>The 2020 master’s thesis demonstrated the approach on a small branch-reaching example. The more complex example was not solved, and the Libtasn1 evaluation did not reproduce known vulnerabilities within the reported run. Serial input overhead and emulation constraints limited scalability.</p> <p>TDFF is a research prototype: its contribution is the implementation and evaluation of a taint-guided workflow for embedded systems, including the limitations encountered.</p> <h2 id="research-and-code">Research and code</h2> <ul> <li><a href="/assets/pdf/savich2020taint.pdf">Read the thesis</a></li> <li><a href="https://github.com/m3lixir-nyu/tdff" rel="external nofollow noopener" target="_blank">TDFF source</a></li> <li><a href="https://github.com/m3lixir-nyu/io_taint" rel="external nofollow noopener" target="_blank">I/O taint plugin</a></li> </ul> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Melisa K. Savich. Last updated: November 15, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-projects",
+          title: "projects",
+          description: "research, tools, and experiments exploring how systems work and what happens when their assumptions fail",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "papers, posters, and technical drafts exploring security across embedded systems, autonomous vehicles, and connected networks",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "my research, engineering, and teaching background, spanning vulnerability discovery, embedded systems, and critical infrastructure security",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "post-michigan-is-rolling-out-the-welcome-mat-for-data-centers-let-39-s-negotiate-from-the-front-porch",
+        
+          title: "Michigan Is Rolling Out the Welcome Mat for Data Centers. Let&#39;s Negotiate From...",
+        
+        description: "The piece argues that Michigan should actively compete for major AI and data center investments while ensuring host communities negotiate from a position of confidence and share in the long-term benefits of that growth. Rather than framing the discussion as a choice between development and opposition, the commentary explores how Michigan can participate in the emerging AI economy on terms that strengthen local infrastructure, resilience, and economic opportunity.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/michigan-data-centers/";
+          
+        },
+      },{id: "news-i-m-currently-exploring-new-opportunities-in-cybersecurity-research-application-security-and-security-engineering-particularly-roles-involving-threat-modeling-vulnerability-research-and-secure-systems-if-your-team-is-working-on-interesting-challenges-i-d-welcome-a-conversation-connect-with-me-on-linkedin",
+          title: 'I’m currently exploring new opportunities in cybersecurity research, application security, and security engineering,...',
+          description: "",
+          section: "News",},{id: "projects-tdff",
+          title: 'TDFF',
+          description: "Taint-guided input mutation for embedded firmware research.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/01_tdff/";
+            },},{id: "projects-chumdump",
+          title: 'Chumdump',
+          description: "Controlled bait and evidence records for defensive AI testing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/02_chumdump/";
+            },},{id: "projects-netweaver",
+          title: 'NetWeaver',
+          description: "Turn device inventories into proposed network segmentation plans.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/03_netweaver/";
+            },},{id: "projects-network-snapshot",
+          title: 'Network Snapshot',
+          description: "Connection details and basic LAN discovery in a mobile dashboard.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/04_network-snapshot/";
+            },},{id: "projects-lan-browser",
+          title: 'LAN Browser',
+          description: "A mobile browser for local device interfaces and development servers.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/05_lan-browser/";
+            },},{id: "projects-what-39-s-this-mac",
+          title: 'What&amp;#39;s This MAC?',
+          description: "MAC-prefix vendor lookup with source context and address flags.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/06_whats-this-mac/";
+            },},{id: "projects-crop-to-content",
+          title: 'Crop to Content',
+          description: "Trim empty image borders with adjustable thresholds and background controls.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/07_crop-to-content/";
+            },},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_project/";
+            },},{id: "projects-project-2",
+          title: 'project 2',
+          description: "a project with a background image and giscus comments",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
+            },},{id: "projects-project-3-with-very-long-name",
+          title: 'project 3 with very long name',
+          description: "a project that redirects to another website",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
+            },},{id: "projects-project-4",
+          title: 'project 4',
+          description: "another without an image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
+            },},{id: "projects-project-5",
+          title: 'project 5',
+          description: "a project with a background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_project/";
+            },},{id: "projects-project-6",
+          title: 'project 6',
+          description: "a project with no image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_project/";
+            },},{id: "projects-project-7",
+          title: 'project 7',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_project/";
+            },},{id: "projects-project-8",
+          title: 'project 8',
+          description: "an other project with a background image and giscus comments",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_project/";
+            },},{id: "projects-project-9",
+          title: 'project 9',
+          description: "another project with an image 🎉",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_project/";
+            },},{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/m3lixir", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/melisasavich", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%68%65%6C%6C%6F@%6D%65%6C%69%73%61%73%61%76%69%63%68.%63%6F%6D", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> <script defer src="/assets/al_email_protect/js/email-protect.js"></script> </body> </html>
