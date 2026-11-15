@@ -1,189 +1,246 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Melisa K. Savich
+  label: Cybersecurity Researcher & Technologist
+  email: hello@melisasavich.com
+  location: Michigan, USA
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: >-
+    Cybersecurity researcher and technologist with experience in
+    vulnerability research, threat modeling, security engineering,
+    adversary simulation, and critical infrastructure security.
+    My work spans embedded systems, firmware fuzzing, binary analysis,
+    intrusion detection, and security automation. I am particularly
+    interested in understanding how complex systems behave, where
+    their assumptions break down, and how interdisciplinary
+    approaches can inform the design of more secure and
+    trustworthy technologies.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: m3lixir
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: New York University
+        location: New York, NY
+        area: Computer Science
+        studyType: Master of Science
+        start_date: ""
+        end_date: 2020
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Master's Thesis: Taint-Driven Firmware Fuzzing of Embedded Systems"
+          - Research focused on vulnerability discovery and automated security testing of embedded firmware.
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: University of Michigan
+        location: Ann Arbor, MI
+        area: Computer Science
+        studyType: Bachelor of Science
+        start_date: ""
+        end_date: 2018
         highlights:
-          - Description 1.
-          - Description 2.
+          - Academic background in computer science, programming, and computer security.
+          - Instructional experience in computer security and data structures.
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Sandia National Laboratories
+        position: Cybersecurity R&D Engineer
+        location: Livermore, CA
+        start_date: 2020-06
+        end_date: 2023-10
+        summary: >-
+          Conducted cybersecurity research and development focused
+          on vulnerability discovery, automated security testing,
+          and the evaluation of critical infrastructure systems.
         highlights:
-          - Relativity
-          - Description 2.
+          - Integrated multiple fuzzing tools into an automated security testing framework for critical infrastructure targets.
+          - Conducted vulnerability research and binary analysis to identify security weaknesses in software and infrastructure systems.
+          - Evaluated and optimized AFL++ fuzzing variants and developed custom mutation strategies for binary targets.
+          - Developed and refined security testing workflows involving test harnesses, benchmarking, and vulnerability discovery.
+          - Supported security engineering through code review, CI/CD integration, and improvements to testing and debugging workflows.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Sandia National Laboratories
+        position: Critical Skills Recruiting Program Fellow
+        location: Albuquerque, NM
+        start_date: 2018-06
+        end_date: 2020-05
+        summary: >-
+          Researched the security and resilience of industrial
+          control systems and critical infrastructure through
+          cyber modeling, simulation, and experimental testing.
         highlights:
-          - Description 1.
-          - Description 2.
+          - Analyzed network topologies, vulnerabilities, and security risks in high-consequence ICS/SCADA environments.
+          - Developed a Hardware-in-the-Loop framework for industrial control system modeling and data acquisition.
+          - Conducted cyber modeling and simulation research to identify attack surfaces and evaluate infrastructure security.
+          - Investigated cyber-physical system behavior and security considerations in controlled research environments.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Sandia National Laboratories
+        position: Cybersecurity R&D Intern
+        location: Albuquerque, NM
+        start_date: 2017-05
+        end_date: 2018-05
+        summary: >-
+          Supported experimental cybersecurity research involving
+          industrial control systems, security monitoring,
+          intrusion detection, and adversarial activity.
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Automated security log ingestion and deployment of ELK Stack dashboards for monitoring an ICS/SCADA cyber range.
+          - Configured and evaluated honeypots to simulate adversarial activity and assess intrusion detection effectiveness.
+          - Supported experimental security monitoring and threat detection research in a controlled critical infrastructure environment.
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: University of Michigan
+        position: Instructional Assistant
+        location: Ann Arbor, MI
+        start_date: 2016-09
+        end_date: 2018-04
+        summary: >-
+          Provided technical instruction and academic support
+          for undergraduate computer science and cybersecurity courses.
+        highlights:
+          - "EECS 388: Introduction to Computer Security"
+          - "EECS 280: Programming and Introductory Data Structures"
+          - Delivered technical instruction and hands-on assistance covering programming, computer security, and software development.
+          - Helped students understand complex technical concepts through practical exercises and individualized guidance.
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: Taint-Driven Embedded Software Fuzzing
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Melisa K. Savich
+        publisher: RSAC Security Scholar Poster Board Exhibition
+        releaseDate: 2019-03
+        summary: >-
+          Research presentation exploring taint-driven approaches
+          to embedded software fuzzing and vulnerability discovery.
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: Taint-Driven Firmware Fuzzing of Embedded Systems
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+          - Melisa K. Savich
+        publisher: New York University
+        releaseDate: 2020
+        summary: >-
+          Master's thesis investigating taint-driven firmware
+          fuzzing techniques for automated vulnerability discovery
+          in embedded systems.
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: NetWeaver
+        summary: >-
+          Network-oriented software project exploring network
+          infrastructure, configuration, and automation.
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - Network engineering
+          - Infrastructure automation
+          - Systems integration
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Taint-Driven Firmware Fuzzing (TDFF)
+        summary: >-
+          Research project investigating the use of taint analysis
+          to guide fuzzing and improve vulnerability discovery
+          in embedded firmware.
+        highlights:
+          - Embedded systems security
+          - Taint analysis
+          - Coverage-guided fuzzing
+          - Automated vulnerability discovery
+          - Firmware analysis
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Chumdump
+        summary: >-
+          Security-oriented software project included in the
+          M3LIXIR technical project portfolio.
+        highlights:
+          - Security tooling
+          - Software development
+
+      - name: AutoCropAI
+        summary: >-
+          Experimental software project exploring automated
+          image cropping using artificial intelligence
+          and image processing techniques.
+        highlights:
+          - Image processing
+          - Automation
+          - Artificial intelligence
+          - Software development
+
+      - name: Artificial Network Traffic Generation
+        summary: >-
+          Research and development project exploring the
+          generation of artificial network traffic for
+          networking and security experimentation.
+        highlights:
+          - Network traffic generation
+          - Security testing
+          - Network analysis
+          - Experimental research
+
+    Skills:
+      - name: Security Research & Analysis
+        icon: fa-solid fa-shield-halved
+        keywords: >-
+          Vulnerability Research, Threat Modeling, Binary Analysis,
+          Firmware Security, Embedded Systems Security,
+          Attack Surface Analysis, Security Testing
+
+      - name: Fuzzing & Vulnerability Discovery
+        icon: fa-solid fa-bug
+        keywords: >-
+          AFL++, Coverage-Guided Fuzzing, Taint Analysis,
+          Mutation Strategies, Test Harness Development,
+          Benchmarking, MAGMA, CGC Binaries
+
+      - name: Network & Infrastructure Security
+        icon: fa-solid fa-network-wired
+        keywords: >-
+          Network Security, ICS/SCADA, Critical Infrastructure,
+          Cyber-Physical Systems, Network Traffic Analysis,
+          Cyber Range Testing, Honeypots
+
+      - name: Threat Detection & Monitoring
+        icon: fa-solid fa-magnifying-glass-chart
+        keywords: >-
+          ELK Stack, Log Analysis, Intrusion Detection Systems,
+          Security Monitoring, Adversary Simulation,
+          Detection Evaluation
+
+      - name: Programming & Automation
+        icon: fa-solid fa-code
+        keywords: >-
+          Python, C/C++, Bash, Security Automation,
+          Software Development, CI/CD, Git,
+          Linux, Test Harness Development
+
+      - name: Research & Engineering Methods
+        icon: fa-solid fa-flask
+        keywords: >-
+          Experimental Design, Cyber Modeling and Simulation,
+          Hardware-in-the-Loop Testing, Security Evaluation,
+          Systems Analysis, Technical Research
+
+    Interests:
+      - name: Cybersecurity Research
+        icon: fa-solid fa-shield-halved
+        keywords: >-
+          Vulnerability Discovery, Threat Modeling,
+          Adversarial Behavior, Security Architecture,
+          Emerging Attack Surfaces
+
+      - name: Trust & Identity Systems
+        icon: fa-solid fa-fingerprint
+        keywords: >-
+          Digital Identity, Authentication, Trust Models,
+          Cryptographic Identity, Trust Continuity,
+          Privacy-Preserving Systems
+
+      - name: Emerging Technologies
+        icon: fa-solid fa-microchip
+        keywords: >-
+          Artificial Intelligence, Embedded Systems,
+          Autonomous Systems, Human-Technology Interaction,
+          Security Automation
+
+      - name: Interdisciplinary Research
+        icon: fa-solid fa-brain
+        keywords: >-
+          Sociology of Trust, Behavioral Security,
+          Human Factors, Systems Thinking,
+          Technology and Society
