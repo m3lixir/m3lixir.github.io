@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: selected research, papers, and technical explorations documenting my work across security, systems, and technology.
+description: papers, posters, and technical drafts exploring security across embedded systems, autonomous vehicles, and connected networks
 nav: true
 nav_order: 3
 ---
