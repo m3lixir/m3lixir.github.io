@@ -5,14 +5,14 @@ date: 2026-06-13 17:08:00
 description: The piece argues that Michigan should actively compete for major AI and data center investments while ensuring host communities negotiate from a position of confidence and share in the long-term benefits of that growth. Rather than framing the discussion as a choice between development and opposition, the commentary explores how Michigan can participate in the emerging AI economy on terms that strengthen local infrastructure, resilience, and economic opportunity.
 tags: michigan data-centers artificial-intelligence infrastructure
 categories: commentary
-thumbnail: assets/img/data-center-thumb.jpg
+thumbnail: assets/img/data-center-thumb.png
 ---
 
 > _Originally written for and submitted to Bridge Michigan, this op-ed ultimately went unpublished. I'm sharing it here as part of my independent writing._
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/data-center.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/data-center.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
