@@ -8,17 +8,16 @@ categories: commentary
 thumbnail: assets/img/data-center-thumb.png
 ---
 
-> _Originally written for and submitted to Bridge Michigan, this op-ed ultimately went unpublished. I'm sharing it here as part of my independent writing._
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/data-center.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Data center construction amid Michigan’s rural landscape.
-    Image source: <a href="https://www.related-digital.com/michigan">Related Digital</a>.
+    <i>Data center construction amid Michigan’s rural landscape. Image source: <a href="https://www.related-digital.com/michigan">Related Digital</a>.</i>
 </div>
+
+> _Originally written for and submitted to Bridge Michigan, this op-ed ultimately went unpublished. I'm sharing it here as part of my independent writing._
 
 Michigan is rolling out the welcome mat for some of the largest data center projects in the country.
 
