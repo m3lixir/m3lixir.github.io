@@ -1,9 +1,19 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"IETF":
+  url: https://www.ietf.org
+  color: "#FFD652"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"NYU":
+  url: https://www.nyu.edu
+  color: "#8900e1"
 
-"Vision":
-  color: "#009f36"
+"RSAC":
+  url: https://www.rsaconference.com
+  color: "#011258"
+
+"IEEE VNC":
+  url: https://ieee-vnc.org
+  color: "#0DB6EF"
+
+"SNL":
+  url: https://www.sandia.gov
+  color: "#00ADD0"

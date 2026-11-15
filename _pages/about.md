@@ -2,15 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: Cybersecurity Researcher & Technologist
+subtitle: Cybersecurity Strategist · Technologist · Security Researcher
 
 profile:
   align: right
   image: profile_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>SECURITY RESEARCH · COMPLEX SYSTEMS · HUMAN BEHAVIOR</p>
-    <p>RESEARCH / ENGINEERING / INTERDISCIPLINARY THINKING</p>
+  more_info:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
