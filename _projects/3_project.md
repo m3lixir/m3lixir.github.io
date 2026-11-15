@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "NetWeaver"
-description: "Turn device inventories into proposed network segmentation plans."
+description: "turn device inventories into proposed network segmentation plans"
 importance: 3
-category: "Network Tools & Engineering"
+category: "network discovery & experimentation"
 ---
 
 A device inventory tells you what is present, but leaves another question: how should those devices be organized? NetWeaver connects inventory data with proposed network boundaries for homes and small offices.

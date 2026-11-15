@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "What's This MAC?"
-description: "MAC-prefix vendor lookup with source context and address flags."
+description: "mac prefix vendor lookup with source context and address flags"
 importance: 6
-category: "Network Tools & Engineering"
+category: "network discovery & experimentation"
 ---
 
 A MAC address can offer a useful clue about a device, but a vendor match is only one piece of evidence. What's This MAC? makes prefix lookup accessible while exposing information that helps users judge the result.

@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "Network Snapshot"
-description: "Connection details and basic LAN discovery in a mobile dashboard."
+description: "connection details and basic lan discovery in a mobile dashboard"
 importance: 4
-category: "Network Tools & Engineering"
+category: "network discovery & experimentation"
 ---
 
 Network troubleshooting often starts with a few basic questions: what network is this device using, what is its public address, and which local interfaces respond? Network Snapshot brings those observations into one mobile dashboard.

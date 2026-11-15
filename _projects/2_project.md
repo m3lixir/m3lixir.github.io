@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "Chumdump"
-description: "Controlled bait and evidence records for defensive AI testing."
+description: "controlled bait and evidence records for defensive ai testing"
 importance: 2
-category: "Security Research & Tooling"
+category: "security research & tooling"
 ---
 
 When an AI system encounters a document, access alone does not establish what it did with the content. Chumdump provides a local workflow for placing traceable test artifacts and preserving the observations available in logs and telemetry.

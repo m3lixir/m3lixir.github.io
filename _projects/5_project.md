@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "LAN Browser"
-description: "A mobile browser for local device interfaces and development servers."
+description: "a mobile browser for local device interfaces and development servers"
 importance: 5
-category: "Network Tools & Engineering"
+category: "network discovery & experimentation"
 ---
 
 Routers, appliances, and development servers often expose their controls through a local web page. LAN Browser provides a focused mobile interface for opening those pages by IP address or URL.

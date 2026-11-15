@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "Crop to Content"
-description: "Trim empty image borders with adjustable thresholds and background controls."
+description: "trim empty image borders with adjustable thresholds and background controls"
 importance: 7
-category: "Applications & Automation"
+category: "software & utilities"
 ---
 
 Removing empty space around an image should not require adjusting four crop handles by hand. Inspired by GIMP's Crop to Content, Crop to Content automates that repetitive step through a mobile interface.

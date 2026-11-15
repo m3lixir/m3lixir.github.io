@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "TDFF"
-description: "Taint-guided input mutation for embedded firmware research."
+description: "taint guided input mutation for embedded firmware research"
 importance: 1
-category: "Security Research & Tooling"
+category: "security research & tooling"
 ---
 
 Embedded firmware depends on hardware interactions that make conventional software testing difficult. TDFF explores whether dynamic taint analysis can help choose more useful inputs when each execution is expensive.
