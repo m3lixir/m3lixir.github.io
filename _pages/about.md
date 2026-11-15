@@ -6,7 +6,7 @@ subtitle: <i>Working outside the expected parameters.</i>
 profile:
   align: right
   image: profile_pic.png
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <center>Cybersecurity Engineer</center>
 
