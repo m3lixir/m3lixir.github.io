@@ -4,7 +4,7 @@ permalink: /publications/
 title: publications
 description: selected research, papers, and technical explorations documenting my work across security, systems, and technology.
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
 <!-- _pages/publications.md -->
