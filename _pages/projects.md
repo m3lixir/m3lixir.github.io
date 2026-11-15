@@ -5,7 +5,7 @@ permalink: /projects/
 description: research, tools, and experiments exploring how systems work and what happens when their assumptions fail
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [security Research & tooling, network discovery & experimentation, software & utilities]
 horizontal: false
 ---
 
