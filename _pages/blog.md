@@ -124,8 +124,8 @@ pagination:
 
 {% if post.thumbnail %}
 
-<div class="row">
-          <div class="col-sm-9">
+<div class="row g-0">
+          <div class="col-sm-9 pe-sm-4">
 {% endif %}
         <h3>
         {% if post.redirect == blank %}
@@ -179,7 +179,7 @@ pagination:
 </div>
 
   <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="width: min(250px, 100%); aspect-ratio: 1 / 1; height: auto; object-fit: cover; object-position: center;" alt="image">
+    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="display: block; width: 100%; max-width: 250px; aspect-ratio: 1 / 1; height: auto; object-fit: cover; object-position: center;" alt="image">
   </div>
 </div>
 {% endif %}
