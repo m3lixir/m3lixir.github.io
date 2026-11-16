@@ -5,7 +5,7 @@ date: 2026-11-16 00:00:00-0500
 description: "Why proving who we are isn't the same as knowing whom to trust."
 tags: [authentication, trust, identity, security]
 categories: [beyond-authentication]
-published: false
+published: true
 related_posts: false
 citation: true
 toc:
