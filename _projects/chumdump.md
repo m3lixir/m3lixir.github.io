@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Chumdump"
+title: "chumdump"
 description: "controlled bait and evidence records for defensive ai testing"
 importance: 2
 category: "security research & tooling"
 ---
 
-When an AI system encounters a document, access alone does not establish what it did with the content. Chumdump provides a local workflow for placing traceable test artifacts and preserving the observations available in logs and telemetry.
+When an AI system encounters a document, access alone does not establish what it did with the content. ChumDump provides a local workflow for placing traceable test artifacts and preserving the observations available in logs and telemetry.
 
 ## What it does
 
@@ -14,7 +14,7 @@ The CLI generates canaries, benign prompt-injection fixtures, retrieval bait, in
 
 - Create and track controlled bait artifacts.
 - Build website, retrieval-test, and agent-test bundles.
-- Scan files for known bait and Chumdump markers.
+- Scan files for known bait and ChumDump markers.
 - Correlate web access logs or JSONL telemetry with bait filenames, IDs, and canary tokens.
 - Export Markdown, JSON, HTML, and SARIF-style evidence reports.
 - Remove files recorded in a marked deployment.
@@ -27,6 +27,6 @@ The evidence model distinguishes access, retrieval, repetition, instruction-foll
 
 ## Scope
 
-Chumdump is an early-alpha defensive testing tool for owned or authorized websites, documentation, retrieval corpora, and lab agents. The emphasis is on controlled experiments and inspectable evidence.
+ChumDump is an early-alpha defensive testing tool for owned or authorized websites, documentation, retrieval corpora, and lab agents. The emphasis is on controlled experiments and inspectable evidence.
 
 [View source](https://github.com/m3lixir/chumdump)
