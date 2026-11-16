@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <i>Working outside the expected parameters.</i>
+subtitle: <b>Cybersecurity Researcher & Technologist</b>
 profile:
   align: right
   image: profile_pic.png
