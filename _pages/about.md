@@ -25,7 +25,7 @@ latest_posts:
 
 I'm drawn to understanding **how complex systems behave**, particularly where their assumptions break down, their limitations become apparent, or their behavior diverges from what was intended.
 
-My background spans vulnerability research, threat modeling, automated security testing, and network architecture. From [taint-driven firmware fuzzing](/projects/tdff) to my [IETF Internet-Draft on residential network mapping](https://datatracker.ietf.org/doc/draft-savich-residential-network-map/), much of my work involves investigating the space between *how systems are designed* and *how they actually operate*.
+My background spans vulnerability research, threat modeling, automated security testing, and network architecture. From [taint-driven firmware fuzzing](/projects/tdff) to my [IETF Internet-Draft on residential network mapping](https://datatracker.ietf.org/doc/draft-savich-residential-network-map/), much of my work involves investigating the space between _how systems are designed_ and _how they actually operate_.
 
 My curiosity rarely stays within one discipline. I'm particularly interested in the intersections of **technology, human behavior, and trust**, and what fields like sociology, psychology, and philosophy can contribute to our understanding of security. Sometimes the most interesting questions emerge when we look beyond the boundaries of the original problem.
 
