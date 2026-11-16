@@ -14,7 +14,7 @@ thumbnail: assets/img/data-center-thumb.png
     </div>
 </div>
 <div class="caption">
-    <i>Data center construction amid Michigan’s rural landscape. Image source: <a href="https://www.related-digital.com/michigan">Related Digital</a>.</i>
+    Data center construction amid Michigan’s rural landscape. <i>Image source: <a href="https://www.related-digital.com/michigan">Related Digital</a>.</i>
 </div>
 
 > _Originally written for and submitted to Bridge Michigan, this op-ed ultimately went unpublished. I'm sharing it here as part of my independent writing._
