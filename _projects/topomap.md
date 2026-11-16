@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "NetWeaver"
+title: "topomap"
 description: "turn device inventories into proposed network segmentation plans"
 importance: 3
 category: "network discovery & experimentation"
 ---
 
-A device inventory tells you what is present, but leaves another question: how should those devices be organized? NetWeaver connects inventory data with proposed network boundaries for homes and small offices.
+A device inventory tells you what is present, but leaves another question: how should those devices be organized? TopoMap connects inventory data with proposed network boundaries for homes and small offices.
 
 ## From inventory to plan
 
@@ -24,6 +24,4 @@ The implementation includes rule-based classification, MAC-vendor lookup, and an
 
 ## Scope
 
-NetWeaver works from supplied inventory data. Its classifications and exposure labels are planning judgments, not measurements of actual reachability. It generates recommendations rather than applying configurations to routers or switches.
-
-The supplied code also uses the name **nmap.me** in parts of its interface and documentation.
+TopoMap works from supplied inventory data. Its classifications and exposure labels are planning judgments, not measurements of actual reachability. It generates recommendations rather than applying configurations to routers or switches.
