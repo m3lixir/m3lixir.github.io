@@ -16,7 +16,7 @@ mermaid:
 ---
 
 **By Melisa K. Savich**  
-*Beyond Authentication · Article 1*
+_Beyond Authentication · Article 1_
 
 <!-- EDITORIAL NOTES — v1 draft, November 16, 2026
 This is a new article draft, separate from the reusable template. The date is a draft date; update it to the actual publication date before publishing. published: false deliberately prevents ordinary Jekyll publication.
@@ -45,13 +45,13 @@ That distinction matters. A service can recognize a returning account without kn
 
 Passwords, multifactor authentication, and passkeys offer different protections. They also overlap: a passkey can participate in multifactor authentication, so these are not three mutually exclusive stages of security progress.
 
-| Mechanism | Useful assurance | A boundary to remember |
-| :--- | :--- | :--- |
-| Password | Evidence of knowledge of an account secret. | A secret can be disclosed or phished. |
-| Multifactor authentication | Evidence involving distinct factors, rather than a password alone. | Phishing resistance depends on the mechanism; an additional factor is not automatically phishing-resistant. |
-| Passkey | Public-key authentication scoped to the relevant service, designed to resist phishing. | Authenticating an account does not establish that a later request is appropriate. |
+| Mechanism                  | Useful assurance                                                                       | A boundary to remember                                                                                      |
+| :------------------------- | :------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| Password                   | Evidence of knowledge of an account secret.                                            | A secret can be disclosed or phished.                                                                       |
+| Multifactor authentication | Evidence involving distinct factors, rather than a password alone.                     | Phishing resistance depends on the mechanism; an additional factor is not automatically phishing-resistant. |
+| Passkey                    | Public-key authentication scoped to the relevant service, designed to resist phishing. | Authenticating an account does not establish that a later request is appropriate.                           |
 
-*The comparison summarizes authentication properties, not a ranking of people or their intentions (Temoshok, Fenton, et al., 2025; FIDO Alliance, n.d.; World Wide Web Consortium [W3C], 2026).*
+_The comparison summarizes authentication properties, not a ranking of people or their intentions (Temoshok, Fenton, et al., 2025; FIDO Alliance, n.d.; World Wide Web Consortium [W3C], 2026)._
 
 For passkeys, the service binding is important: the credential is not simply a reusable secret someone can type into a convincing imitation of the website. WebAuthn defines scoped public-key credentials; FIDO describes passkeys as service-bound credentials designed for phishing-resistant authentication (W3C, 2026; FIDO Alliance, n.d.).
 
@@ -114,7 +114,7 @@ It would be misleading to say authentication tells us nothing about continuity. 
 
 The narrower point is that an authenticated return visit, an ongoing session, and a longstanding human relationship are different kinds of continuity.[^continuity]
 
-Even a perfectly established history of account control would not prove that every future action serves the recipient's interests. Continuity can strengthen the evidence for *same account or operator* without resolving *appropriate request*.
+Even a perfectly established history of account control would not prove that every future action serves the recipient's interests. Continuity can strengthen the evidence for _same account or operator_ without resolving _appropriate request_.
 
 This also creates a question worth following in later essays: could an adversary accumulate credibility through ordinary interactions, then use that credibility to influence a more consequential decision? And could that influence extend beyond one transaction into which explanations, sources, or judgments a person accepts?
 
@@ -176,18 +176,18 @@ For the next part of this series, the question becomes how trust develops, chang
 
 ## References
 
-Federal Bureau of Investigation. (n.d.). *Business email compromise*. https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise
+Federal Bureau of Investigation. (n.d.). _Business email compromise_. https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise
 
-Federal Bureau of Investigation. (2024, September 11). *Business email compromise: The $55 billion scam* (Alert No. I-091124-PSA). Internet Crime Complaint Center. https://www.ic3.gov/PSA/2024/PSA240911
+Federal Bureau of Investigation. (2024, September 11). _Business email compromise: The $55 billion scam_ (Alert No. I-091124-PSA). Internet Crime Complaint Center. https://www.ic3.gov/PSA/2024/PSA240911
 
-FIDO Alliance. (n.d.). *User authentication specifications overview*. https://fidoalliance.org/specifications/
+FIDO Alliance. (n.d.). _User authentication specifications overview_. https://fidoalliance.org/specifications/
 
-Lewis, J. D., & Weigert, A. (1985). Trust as a social reality. *Social Forces, 63*(4), 967–985. https://doi.org/10.1093/sf/63.4.967
+Lewis, J. D., & Weigert, A. (1985). Trust as a social reality. _Social Forces, 63_(4), 967–985. https://doi.org/10.1093/sf/63.4.967
 
-Mayer, R. C., Davis, J. H., & Schoorman, F. D. (1995). An integrative model of organizational trust. *Academy of Management Review, 20*(3), 709–734. https://doi.org/10.5465/amr.1995.9508080335
+Mayer, R. C., Davis, J. H., & Schoorman, F. D. (1995). An integrative model of organizational trust. _Academy of Management Review, 20_(3), 709–734. https://doi.org/10.5465/amr.1995.9508080335
 
-Temoshok, D., Abruzzi, C., Choong, Y.-Y., Fenton, J., Galluzzo, R., LaSalle, C., Lefkovitz, N., Regenscheid, A., & Vachino, M. (2025). *Digital identity guidelines: Identity proofing and enrollment* (NIST Special Publication 800-63A-4). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-63a-4
+Temoshok, D., Abruzzi, C., Choong, Y.-Y., Fenton, J., Galluzzo, R., LaSalle, C., Lefkovitz, N., Regenscheid, A., & Vachino, M. (2025). _Digital identity guidelines: Identity proofing and enrollment_ (NIST Special Publication 800-63A-4). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-63a-4
 
-Temoshok, D., Fenton, J., Choong, Y.-Y., Lefkovitz, N., Regenscheid, A., Galluzzo, R., & Richer, J. (2025). *Digital identity guidelines: Authentication and authenticator management* (NIST Special Publication 800-63B-4). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-63b-4
+Temoshok, D., Fenton, J., Choong, Y.-Y., Lefkovitz, N., Regenscheid, A., Galluzzo, R., & Richer, J. (2025). _Digital identity guidelines: Authentication and authenticator management_ (NIST Special Publication 800-63B-4). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-63b-4
 
-World Wide Web Consortium. (2026, August 25). *Web authentication: An API for accessing public key credentials—Level 3*. https://www.w3.org/TR/2026/REC-webauthn-3-20260825/
+World Wide Web Consortium. (2026, August 25). _Web authentication: An API for accessing public key credentials—Level 3_. https://www.w3.org/TR/2026/REC-webauthn-3-20260825/
