@@ -16,7 +16,7 @@ mermaid:
 ---
 
 **By Melisa K. Savich**  
-*Beyond Authentication · Article 1*
+_Beyond Authentication · Article 1_
 
 <!-- EDITORIAL NOTES — v1.1 readability revision, November 16, 2026
 The date is a draft date; update it before publishing. Keep published: false until review is complete.
@@ -34,7 +34,7 @@ The name is familiar. The conversation history is there. The request sounds like
 
 You might first check whether it's really your colleague. But suppose you could establish that it is. They might still be mistaken about who should receive the file—or asking you to bypass a rule.
 
-This hypothetical request captures the question behind *Beyond Authentication*: what evidence do we need before deciding to act?
+This hypothetical request captures the question behind _Beyond Authentication_: what evidence do we need before deciding to act?
 
 A successful identity check helps. It doesn't finish the job.
 
@@ -50,13 +50,13 @@ But even a well-protected account can make an inappropriate request.
 
 For our colleague's message, three questions matter:
 
-| Question | What it helps establish |
-| :--- | :--- |
-| Who is making the request? | Evidence about identity and account control. |
-| Are they entitled to ask? | Whether the action fits their authority. |
-| Should I comply here? | Whether the destination, purpose, and consequences are acceptable. |
+| Question                   | What it helps establish                                            |
+| :------------------------- | :----------------------------------------------------------------- |
+| Who is making the request? | Evidence about identity and account control.                       |
+| Are they entitled to ask?  | Whether the action fits their authority.                           |
+| Should I comply here?      | Whether the destination, purpose, and consequences are acceptable. |
 
-*This is a way to organize the decision, not a checklist that guarantees safety.*
+_This is a way to organize the decision, not a checklist that guarantees safety._
 
 We can have a convincing answer to the first question while the other two remain wide open.
 
@@ -72,7 +72,7 @@ Our opening example adds a third possibility. Your colleague really is asking, b
 
 These distinctions change what would help. Strong authentication can help prevent takeover. Independent confirmation can help verify a changed destination. A narrower permission can limit what gets disclosed.
 
-The reassuring word *verified* leaves something out unless we also know **what was verified**.
+The reassuring word _verified_ leaves something out unless we also know **what was verified**.
 
 ## Trust is bigger than an identity check
 
@@ -98,7 +98,7 @@ That's a research question here. Email-compromise evidence alone doesn't establi
 
 ## A trust system connects evidence to action
 
-I'm using *trust system* as a working term for the arrangements that help us decide what to rely on, for what purpose, and what we can do when something goes wrong.
+I'm using _trust system_ as a working term for the arrangements that help us decide what to rely on, for what purpose, and what we can do when something goes wrong.
 
 It isn't one product or a universal score. It can include software, procedures, and relationships.
 
@@ -117,7 +117,7 @@ flowchart TD
     D -->|Yes| F["Act with relevant safeguards"]
 ```
 
-*An illustrative decision sketch, not a validated algorithm. The second question still matters after the first is answered.*
+_An illustrative decision sketch, not a validated algorithm. The second question still matters after the first is answered._
 
 ## Do we actually need another layer?
 
@@ -149,14 +149,14 @@ What should a system show us before we decide to act?
 
 ## References
 
-Federal Bureau of Investigation. (n.d.). *Business email compromise*. https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise
+Federal Bureau of Investigation. (n.d.). _Business email compromise_. https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise
 
-Federal Bureau of Investigation. (2024, September 11). *Business email compromise: The $55 billion scam* (Alert No. I-091124-PSA). Internet Crime Complaint Center. https://www.ic3.gov/PSA/2024/PSA240911
+Federal Bureau of Investigation. (2024, September 11). _Business email compromise: The $55 billion scam_ (Alert No. I-091124-PSA). Internet Crime Complaint Center. https://www.ic3.gov/PSA/2024/PSA240911
 
-FIDO Alliance. (n.d.). *User authentication specifications overview*. https://fidoalliance.org/specifications/
+FIDO Alliance. (n.d.). _User authentication specifications overview_. https://fidoalliance.org/specifications/
 
-Lewis, J. D., & Weigert, A. (1985). Trust as a social reality. *Social Forces, 63*(4), 967–985. https://doi.org/10.1093/sf/63.4.967
+Lewis, J. D., & Weigert, A. (1985). Trust as a social reality. _Social Forces, 63_(4), 967–985. https://doi.org/10.1093/sf/63.4.967
 
-Temoshok, D., Abruzzi, C., Choong, Y.-Y., Fenton, J., Galluzzo, R., LaSalle, C., Lefkovitz, N., Regenscheid, A., & Vachino, M. (2025). *Digital identity guidelines: Identity proofing and enrollment* (NIST Special Publication 800-63A-4). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-63a-4
+Temoshok, D., Abruzzi, C., Choong, Y.-Y., Fenton, J., Galluzzo, R., LaSalle, C., Lefkovitz, N., Regenscheid, A., & Vachino, M. (2025). _Digital identity guidelines: Identity proofing and enrollment_ (NIST Special Publication 800-63A-4). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-63a-4
 
-Temoshok, D., Fenton, J., Choong, Y.-Y., Lefkovitz, N., Regenscheid, A., Galluzzo, R., & Richer, J. (2025). *Digital identity guidelines: Authentication and authenticator management* (NIST Special Publication 800-63B-4). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-63b-4
+Temoshok, D., Fenton, J., Choong, Y.-Y., Lefkovitz, N., Regenscheid, A., Galluzzo, R., & Richer, J. (2025). _Digital identity guidelines: Authentication and authenticator management_ (NIST Special Publication 800-63B-4). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-63b-4
