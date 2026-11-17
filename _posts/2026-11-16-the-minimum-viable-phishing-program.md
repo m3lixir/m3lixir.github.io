@@ -5,7 +5,7 @@ date: 2026-11-16 19:59:54-0500
 description: "Five practical steps to build a phishing program for a small team."
 tags: [phishing, security-awareness, small-business, cybersecurity]
 categories: [security]
-published: false
+published: true
 related_posts: false
 toc:
   sidebar: left
