@@ -13,6 +13,39 @@ toc:
 
 *A practical guide for the administrator doing everything else, too.*
 
+<figure class="phishing-hero">
+  <img
+    class="phishing-hero-light"
+    src="{{ '/assets/img/blog/minimum-viable-phishing-program/hero-light.png' | relative_url }}"
+    alt="A cursor approaching a button suspended from a fishing hook."
+  >
+  <img
+    class="phishing-hero-dark"
+    src="{{ '/assets/img/blog/minimum-viable-phishing-program/hero-dark.png' | relative_url }}"
+    alt="A cursor approaching a button suspended from a fishing hook."
+  >
+</figure>
+
+<style>
+  .phishing-hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .phishing-hero .phishing-hero-dark {
+    display: none;
+  }
+
+  html[data-theme="dark"] .phishing-hero .phishing-hero-light {
+    display: none;
+  }
+
+  html[data-theme="dark"] .phishing-hero .phishing-hero-dark {
+    display: block;
+  }
+</style>
+
 You don’t need a dedicated security team to start a phishing program. You need a reliable reporting path, a way to practice it, and a few useful measurements.
 
 I built two free companion projects to make that easier. Here’s how to get started as a solo administrator supporting 5–50 employees.
