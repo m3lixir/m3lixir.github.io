@@ -1,0 +1,153 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> The Minimum Viable Phishing Program | Melisa K. Savich </title> <meta name="author" content="Melisa K. Savich"> <meta name="description" content="Five practical steps to build a phishing program for a small team."> <meta name="keywords" content="Melisa K. Savich, cybersecurity, cybersecurity research, security engineering, threat modeling, vulnerability research, secure architecture, fuzzing, systems security, emerging technologies, computational trust"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.css" integrity="sha256-zTN0r+0OKaIv2xqeNNIYxNk0pWJ6+IqPGc1iDgVzWF0=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%91%BE&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://melisasavich.com/blog/2026/the-minimum-viable-phishing-program/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> <link rel="stylesheet" href="/assets/al_email_protect/css/email-protect.css"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Melisa</span> K. Savich </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="row"> <div class="col-sm-3"> <nav id="toc-sidebar" class="sticky-top toc toc-sidebar" aria-label="Table of contents" data-toc-collapse="expanded" data-toc-collapse-depth=""></nav> </div> <div class="col-sm-9"> <div class="post"> <header class="post-header"> <h1 class="post-title">The Minimum Viable Phishing Program</h1> <p class="post-meta"> Created on November 17, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/blog/tag/phishing"> <i class="fa-solid fa-hashtag fa-sm"></i> phishing</a>   <a href="/blog/tag/security-awareness"> <i class="fa-solid fa-hashtag fa-sm"></i> security-awareness</a>   <a href="/blog/tag/small-business"> <i class="fa-solid fa-hashtag fa-sm"></i> small-business</a>   <a href="/blog/tag/cybersecurity"> <i class="fa-solid fa-hashtag fa-sm"></i> cybersecurity</a>   ·   <a href="/blog/category/security"> <i class="fa-solid fa-tag fa-sm"></i> security</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p><em>A practical guide for the administrator doing everything else, too.</em></p> <p>You don’t need a dedicated security team to start a phishing program. You need a reliable reporting path, a way to practice it, and a few useful measurements.</p> <p>I built two free companion projects to make that easier. Here’s how to get started as a solo administrator supporting 5–50 employees.</p> <h2 id="1-set-up-reporting">1. Set up reporting</h2> <p>Choose a primary reporting method and a fallback. Test both in the mail clients employees use:</p> <ul> <li> <strong>Primary:</strong> A report button configured to reach IT.</li> <li> <strong>Fallback:</strong> A monitored security mailbox for suspicious messages forwarded as attachments.</li> </ul> <p>Microsoft can route supported user reports to a reporting mailbox, Microsoft, or both.<sup id="fnref:microsoft-routing"><a href="#fn:microsoft-routing" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> Gmail’s <strong>Report phishing</strong> action reports to Google; establish and test a separate path to your administrator.<sup id="fnref:google"><a href="#fn:google" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p> <blockquote class="block-tip"> <h5 id="tell-employees">Tell employees</h5> <p>If you clicked a link, entered information, approved an unexpected sign-in, or sent money, contact IT immediately.</p> </blockquote> <h2 id="2-pick-a-realistic-scenario">2. Pick a realistic scenario</h2> <p>Choose one request that fits your workflows: an urgent account alert, a vendor payment change, or an unexpected shared document.</p> <p>Write down the desired response. For a payment change: <strong>Call the vendor using an independently verified number before changing anything.</strong></p> <p>Pair training with technical controls. Phishing-resistant MFA and independent payment verification help reduce the consequences when a message gets through.<sup id="fnref:cisa-fbi"><a href="#fn:cisa-fbi" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p> <h2 id="3-train-and-practice">3. Train and practice</h2> <p>Spend 15 minutes demonstrating how to <strong>pause, verify, and report</strong>. Then walk through your scenario as a tabletop exercise.</p> <p>The <a href="https://github.com/m3lixir/minimum-viable-phishing-training" rel="external nofollow noopener" target="_blank">training kit</a> provides an employee guide, discussion exercises, and facilitator notes. Use it during onboarding and revisit it after exercises.</p> <h2 id="4-run-an-authorized-simulation">4. Run an authorized simulation</h2> <p>If you choose an email simulation, obtain written authorization and define participants, dates, and who can access results. Use a benign landing page; don’t collect passwords or MFA codes.</p> <p>Microsoft’s Attack simulation training requires Microsoft 365 E5 or Defender for Office 365 Plan 2.<sup id="fnref:microsoft-simulations"><a href="#fn:microsoft-simulations" class="footnote" rel="footnote" role="doc-noteref">4</a></sup> GoPhish is open source, but you’ll maintain the infrastructure.<sup id="fnref:gophish"><a href="#fn:gophish" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></p> <p>Document any delivery exception. A message deliberately allowed through doesn’t test your normal filtering.</p> <h2 id="5-measure-and-adjust">5. Measure and adjust</h2> <p>Record confirmed deliveries and unique reporters; divide reporters by deliveries for the <strong>reporting rate</strong>. Also track time to the first report, IT acknowledgment time, and failed deliveries.</p> <p>Note scenario difficulty: an informal easy/moderate/hard label isn’t a formal NIST Phish Scale score.<sup id="fnref:nist"><a href="#fn:nist" class="footnote" rel="footnote" role="doc-noteref">6</a></sup> Show counts alongside percentages; one person makes a big difference on a small team.</p> <p>The <a href="https://github.com/m3lixir/minimum-viable-phishing-campaign" rel="external nofollow noopener" target="_blank">campaign PoC</a> demonstrates these metrics using synthetic data. It doesn’t send email or run live simulations.</p> <h2 id="your-first-90-days">Your first 90 days</h2> <ul> <li> <strong>Days 1–30:</strong> Set up reporting, assign an owner, and choose a scenario.</li> <li> <strong>Days 31–60:</strong> Train employees and run a tabletop or authorized pilot.</li> <li> <strong>Days 61–90:</strong> Review results, fix one gap, and schedule the next review.</li> </ul> <p>Afterward, test the reporting path monthly and revisit the procedure quarterly.</p> <p>Thanks for reading. Start with the <a href="https://github.com/m3lixir/minimum-viable-phishing-training" rel="external nofollow noopener" target="_blank">training kit</a>, then explore the <a href="https://github.com/m3lixir/minimum-viable-phishing-campaign" rel="external nofollow noopener" target="_blank">campaign PoC</a> when you’re ready to measure results.</p> <h2 id="references">References</h2> <div class="footnotes" role="doc-endnotes"> <ol> <li id="fn:microsoft-routing"> <p>Microsoft. (n.d.). <em>Configure user reported message settings in Microsoft Defender for Office 365</em>. Microsoft Learn. https://learn.microsoft.com/microsoft-365/security/office-365-security/user-submission <a href="#fnref:microsoft-routing" class="reversefootnote" role="doc-backlink">↩</a></p> </li> <li id="fn:google"> <p>Google. (n.d.). <em>Avoid and report phishing emails</em>. Gmail Help. https://support.google.com/mail/answer/8253 <a href="#fnref:google" class="reversefootnote" role="doc-backlink">↩</a></p> </li> <li id="fn:cisa-fbi"> <p>Cybersecurity and Infrastructure Security Agency, &amp; Federal Bureau of Investigation. (2024). <em>How to protect against Iranian targeting of accounts</em>. https://www.cisa.gov/sites/default/files/2024-10/cisa-fbi-protecting-against-irgc-phishing-508c.pdf <a href="#fnref:cisa-fbi" class="reversefootnote" role="doc-backlink">↩</a></p> </li> <li id="fn:microsoft-simulations"> <p>Microsoft. (n.d.). <em>Get started using Attack simulation training</em>. Microsoft Learn. https://learn.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-get-started <a href="#fnref:microsoft-simulations" class="reversefootnote" role="doc-backlink">↩</a></p> </li> <li id="fn:gophish"> <p>GoPhish. (n.d.). <em>Email reporting</em>. GoPhish user guide. https://docs.getgophish.com/user-guide/documentation/email-reporting <a href="#fnref:gophish" class="reversefootnote" role="doc-backlink">↩</a></p> </li> <li id="fn:nist"> <p>Dawkins, S., &amp; Jacobs, J. (2023). <em>NIST Phish Scale user guide</em> (NIST Technical Note 2276). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.TN.2276 <a href="#fnref:nist" class="reversefootnote" role="doc-backlink">↩</a></p> </li> </ol> </div> </div> </article> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Melisa K. Savich. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script defer src="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.js" integrity="sha256-lo/r+jQ81wWrxdIiiiEEd538z4+dTJTt+leOuAS7GCw=" crossorigin="anonymous"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-projects",
+          title: "projects",
+          description: "research, tools, and experiments exploring how systems work and what happens when their assumptions fail",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "papers, posters, and technical drafts exploring security across embedded systems, autonomous vehicles, and connected networks",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "my research, engineering, and teaching background, spanning vulnerability discovery, embedded systems, and critical infrastructure security",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "post-the-minimum-viable-phishing-program",
+        
+          title: "The Minimum Viable Phishing Program",
+        
+        description: "Five practical steps to build a phishing program for a small team.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/the-minimum-viable-phishing-program/";
+          
+        },
+      },{id: "post-the-internet-has-a-trust-problem",
+        
+          title: "The Internet Has a Trust Problem",
+        
+        description: "Why proving who we are isn&#39;t the same as knowing whom to trust.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/the-internet-has-a-trust-problem/";
+          
+        },
+      },{id: "post-michigan-is-rolling-out-the-welcome-mat-for-data-centers-let-39-s-negotiate-from-the-front-porch",
+        
+          title: "Michigan Is Rolling Out the Welcome Mat for Data Centers. Let&#39;s Negotiate From...",
+        
+        description: "The piece argues that Michigan should actively compete for major AI and data center investments while ensuring host communities negotiate from a position of confidence and share in the long-term benefits of that growth. Rather than framing the discussion as a choice between development and opposition, the commentary explores how Michigan can participate in the emerging AI economy on terms that strengthen local infrastructure, resilience, and economic opportunity.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/michigan-data-centers/";
+          
+        },
+      },{id: "news-i-39-m-currently-exploring-new-opportunities-in-cybersecurity-research-application-security-and-security-engineering-particularly-roles-involving-threat-modeling-vulnerability-research-and-secure-systems-if-your-team-is-working-on-interesting-challenges-i-39-d-welcome-a-conversation-connect-with-me-on-linkedin-https-www-linkedin-com-in-melisasavich",
+          title: 'I&amp;#39;m currently exploring new opportunities in **cybersecurity research, application security, and security engineering**,...',
+          description: "",
+          section: "News",},{id: "news-i-39-m-introducing-beyond-authentication-blog-category-beyond-authentication-a-series-exploring-identity-trust-and-the-systems-we-haven-39-t-built-yet-the-starting-question-what-does-proving-who-we-39-re-interacting-with-actually-tell-us-about-whether-to-trust-the-interaction-i-39-ll-follow-that-question-through-security-human-behavior-and-the-possibilities-and-limits-of-designing-systems-that-help-us-decide",
+          title: 'I&amp;#39;m introducing [Beyond Authentication](/blog/category/beyond-authentication), a series exploring identity, trust, and the systems we...',
+          description: "",
+          section: "News",},{id: "projects-chumdump",
+          title: 'chumdump',
+          description: "controlled bait and evidence records for defensive ai testing",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/chumdump/";
+            },},{id: "projects-crop-to-content",
+          title: 'Crop to Content',
+          description: "trim empty image borders with adjustable thresholds and background controls",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/croptocontent/";
+            },},{id: "projects-lan-browser",
+          title: 'LAN Browser',
+          description: "a mobile browser for local device interfaces and development servers",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/lanbrowser/";
+            },},{id: "projects-network-snapshot",
+          title: 'Network Snapshot',
+          description: "connection details and basic lan discovery in a mobile dashboard",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/netshot/";
+            },},{id: "projects-tdff",
+          title: 'tdff',
+          description: "taint guided input mutation for embedded firmware research",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/tdff/";
+            },},{id: "projects-topomap",
+          title: 'topomap',
+          description: "turn device inventories into proposed network segmentation plans",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/topomap/";
+            },},{id: "projects-whatsthismac",
+          title: 'whatsthismac',
+          description: "mac prefix vendor lookup with source context and address flags",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/whatsthismac/";
+            },},{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> <script defer src="/assets/al_email_protect/js/email-protect.js"></script> </body> </html>
